@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Tienda online de tecnología">
+    <meta name="author" content="Roberto Daniel Fascia">
+    <meta name="keywords" content="e-commerce, tecnología, tienda online">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="SkyTech - Tienda de Tecnología">
+    <meta property="og:description" content="Encuentra los mejores productos tecnológicos en SkyTech.">
+    <meta property="og:image" content="imagenes/logo.png">
+    <meta property="og:url" content="https://www.skytech.com">
+    <script src="scripts.js"></script>   
+    <link rel="stylesheet" href="styles.css">
+   
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <title>SkyTech</title>
+</head>
+<body>
+    <header>
+        <h1>SkyTech</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Inicio</a></li>
+                <li><a href="#products">Productos</a></li>
+                <li><a href="#contact">Contacto</a></li>      
+              
+                            
+               
+                <li class="icon-container">
+                    <a href="#" id="icono-carrito">
+                        <img src= "icono-carrito.png" alt="Carrito" class="icono">
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <aside>
+            <h2>Menú</h2>
+            <form>
+                <input type="text" placeholder="Buscar...">
+                <input type="submit" value="Buscar">
+            </form>
+            <h3>Buscar en Google</h3>
+            <a href="https://www.google.com" target="_blank" rel="noopener noreferrer">Buscar en Google</a>
+            <section id="contact">
+                <h2>Contacto</h2>
+                <form id="form-contacto" action="#" method="POST">
+
+                <form action="#" method="POST">
+                    <label for="name">Nombre:</label><br/>
+                    <input type="text" id="name" name="name" required><br/>
+                    <label for="email">Correo Electrónico:</label><br/>
+                    <input type="email" id="email" name="email" required><br/>
+                    <label for="message">Mensaje:</label><br/>
+                    <textarea id="message" name="message" required></textarea><br/>
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+            <section id="video-section">
+                <h3 class="video-title">Novedades</h3>
+                <iframe id="video-frame" width="100%" height="200" src="https://www.youtube.com/embed/3yM5uXp-T_0?si=dZilNfKhBfCp3Kn9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <p class="video-description"><em>Descripción del video. <a id="video-link" href="https://www.youtube.com/watch?v=3yM5uXp-T_0&t=185s" target="_blank">Ver más</a></em></p>
+            </section>
+        </aside>
+
+        <div class="content">
+            <section id="home">
+                <h2>Bienvenido a SkyTech</h2>
+                <p>Encuentra los mejores productos tecnológicos.</p>
+            </section>
+
+            <section id="products">
+                <h2>Productos</h2>
+                <div class="grid-container" id="products-container">
+                    <!-- Producto 1 -->
+                    <article class="producto">
+                        <img src="images/Netbook14.png" alt="Netbook 14 pulgadas">
+                        <h3>Netbook 14"</h3>
+                        <p>Liviana y amplias características.</p>
+                        <button onclick="agregarAlCarrito('Netbook 14', 300)" aria-label="Agregar Netbook 14 al Carrito">Agregar al Carrito - $300</button>
+                    </article>
+
+                    <!-- Producto 2 -->
+                    <article class="producto">
+                        <img src="images/Laptop Gaming.png" alt="Laptop Gaming">
+                        <h3>Laptop Gaming</h3>
+                        <p>Potente y rápida para juegos.</p>
+                        <button onclick="agregarAlCarrito('Laptop Gaming', 1200)" aria-label="Agregar Laptop Gaming al Carrito">Agregar al Carrito - $1200</button>
+                    </article>
+
+                    <!-- Producto 3 -->
+                    <article class="producto">
+                        <img src="images/SmartPhone X.png" alt="Smartphone X">
+                        <h3>Smartphone X</h3>
+                        <p>Cámara de alta resolución.</p>
+                        <button onclick="agregarAlCarrito('Smartphone X', 800)" aria-label="Agregar Smartphone X al Carrito">Agregar al Carrito - $800</button>
+                    </article>
+
+                    <!-- Producto 4 -->
+                    <article class="producto">
+                        <img src="images/Tablet Pro.png" alt="Tablet Pro">
+                        <h3>Tablet Pro</h3>
+                        <p>Ideal para trabajo y entretenimiento.</p>
+                        <button onclick="agregarAlCarrito('Tablet Pro', 600)" aria-label="Agregar Tablet Pro al Carrito">Agregar al Carrito - $600</button>
+                    </article>
+
+                    <!-- Producto 5 -->
+                    <article class="producto">
+                        <img src="images/SmartWatch series 5.png" alt="Smartwatch Series 5">
+                        <h3>Smartwatch Series 5</h3>
+                        <p>Sigue tu actividad física.</p>
+                        <button onclick="agregarAlCarrito('Smartwatch Series 5', 250)" aria-label="Agregar Smartwatch Series 5 al Carrito">Agregar al Carrito - $250</button>
+                    </article>
+
+                    <!-- Producto 6 -->
+                    <article class="producto">
+                        <img src="images/Auriculares Inalambricos.png" alt="Auriculares Inalámbricos">
+                        <h3>Auriculares Inalámbricos</h3>
+                        <p>Sonido envolvente y comodidad.</p>
+                        <button onclick="agregarAlCarrito('Auriculares Inalámbricos', 150)" aria-label="Agregar Auriculares Inalámbricos al Carrito">Agregar al Carrito - $150</button>
+                    </article>
+                </div>
+            </section>
+
+            <section id="cart">
+                <h2>Carrito de Compras</h2>
+                <div id="cart-container"></div>
+                <p id="total-price">Total: $0</p>
+                <p>Artículos en el carrito: <span id="cart-count">0</span></p> 
+                <li class="icon-container">                   
+                        <img src="icono-carrito.png" alt="Carrito" class="icono">
+                        <span id="cart-count">0</span>
+                    </a>
+                </li>
+                
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class='footer-columns'>
+            <div class='footer-column'>
+                <h3>Quienes Somos</h3>
+                <p>texto de relleno</p>
+            </div>
+            <div class='footer-column'>
+                <h3>Contáctenos</h3>
+                <p>texto de relleno</p>
+            </div>
+            <div class='footer-column'>
+                <h3>Productos</h3>
+                <p>texto de relleno</p>
+            </div>
+        </div>
+        <p >&copy; 2024 SkyTech. Todos los derechos reservados.</p>
+        <p>
+            <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                    src="http://jigsaw.w3.org/css-validator/images/vcss"
+                    alt="¡CSS Válido!" />
+            </a>
+        </p>
+    </footer>
+    
+</body>
+</html>

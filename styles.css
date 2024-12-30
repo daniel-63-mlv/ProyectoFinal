@@ -1,0 +1,114 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0 auto;
+    padding: 0;
+    background-color: red;
+    width: 100vw;
+    overflow-x: hidden;
+}
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+h1 {
+    text-align: center;
+    color: #00f; /* Azul brillante */
+    font-size: 2em; /* Doble de tamaño */
+}
+#home, h2, p {
+    text-align: center;
+}
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li {
+    margin-right: 15px;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+main {
+    display: flex;
+}
+aside {
+    width: 20%;
+    background-color: orange; /* Color de fondo anaranjado */
+    padding: 10px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+.producto {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+.producto img[alt="Smartwatch Series 5"] {
+    transform: scale(0.8); /* Reducir tamaño en un 20% */
+}
+.footer-columns {
+    display: flex;
+}
+.footer-column {
+    flex: 1;
+    text-align: center;
+}
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+footer p {
+    text-align: center;
+}
+
+#video-frame {
+    width: 100%;
+    max-width: 560px; /* Ajusta el ancho máximo del video */
+    height: auto;
+    aspect-ratio: 16/9; /* Mantiene la relación de aspecto del video */
+}
+
+#video-container {
+    display: grid;
+    place-items: center;
+}
+
+aside {
+    background-size: cover;
+}
+
+
+
+.video-title {
+    color: #0f0; /* Verde fluor */
+}
+.video-description {
+    font-style: italic;
+}
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-columns: 1fr;
+    }
+    aside {
+        width: 100%;
+    }
+    main {
+        flex-direction: column;
+    }
+}
+
+
